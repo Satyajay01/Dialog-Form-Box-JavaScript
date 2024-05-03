@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+        }
+        .logIn{
+            width: 100vw;
+            height: 100vh;
+            background-color: transparent;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-color: aquamarine;
+            top: 0%;
+            left: 0%;
+
+        }
+        
+        .form_box{
+            border: 2px solid;
+            width: 80vw;
+            height: 80vh;
+            background-color: rgba(0, 128, 0, 0.76);
+        }
+
+        .close_button{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button onclick="form_fun()">Open_button</button>
+
+    </div>
+    <div class="logIn" id="logIn_ID">
+        <button class="close_button" onclick="form_fun2()">Close_button</button>
+        <div class="form_box">
+
+        </div>
+
+    </div>
+
+
+    
+</body>
+<script>
+    function form_fun() {
+        const a = document.querySelector(".logIn")
+            a.style.display="flex"
+            console.log("ho rah hai")
+    }
+    function form_fun2() {
+        const a = document.querySelector(".logIn")
+            a.style.display="none"
+            console.log("ho rah hai")
+    }
+
+</script>
+</html>
